@@ -10,6 +10,7 @@ jobs:
   PackageAndPublish:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: npm install -g vsce
       - run: vsce package
       - run: vsce publish
