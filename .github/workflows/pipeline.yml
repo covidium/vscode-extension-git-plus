@@ -8,7 +8,7 @@ on:
 
 jobs:
   PackageAndPublish:
-    runs-on: node-latest
+    runs-on: ubuntu-latest
     steps:
       - run: npm install -g vsce
       - run: vsce package
