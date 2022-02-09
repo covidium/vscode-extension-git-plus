@@ -1,0 +1,76 @@
+{
+	"name": "git-plus",
+	"publisher": "covidium",
+	"icon": "img/logo.png",
+	"displayName": "Git Plus",
+	"description": "Git Plus implementation for VSCode",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"git",
+		"add",
+		"commit",
+		"push",
+		"shortcut",
+		"hotkey",
+		"auto",
+		"macro"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/covidium/vscode-extension-git-plus"
+	},
+	"activationEvents": [
+		"onCommand:extension.GPgitAdd",
+    "onCommand:extension.GPgitAddAll",
+    "onCommand:extension.GPgitAddAndCommit",
+    "onCommand:extension.GPgitAddAllAndCommit",
+    "onCommand:extension.GPgitAddAndCommitAndPush",
+		"onCommand:extension.GPgitAddAllAndCommitAndPush"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.GPgitAdd",
+				"title": "Git+ Add"
+			},
+			{
+				"command": "extension.GPgitAddAll",
+				"title": "Git+ Add All"
+			},
+      {
+        "command": "extension.GPgitAddAndCommit",
+        "title": "Git+ Add And Commit"
+      },
+      {
+        "command": "extension.GPgitAddAllAndCommit",
+        "title": "Git+ Add All And Commit"
+      },
+      {
+        "command": "extension.GPgitAddAndCommitAndPush",
+        "title": "Git+ Add And Commit And Push"
+      },
+      {
+        "command": "extension.GPgitAddAllAndCommitAndPush",
+        "title": "Git+ Add All And Commit And Push"
+      }
+		]
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.2.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.2.0"
+	}
+}
