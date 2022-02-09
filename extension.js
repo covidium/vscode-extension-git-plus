@@ -1,7 +1,7 @@
 const vscode = require('vscode');
 
 /**
- * @param {vscode.ExtensionContext} context
+** @param {vscode.ExtensionContext} context
 **/
 
 
