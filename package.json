@@ -27,10 +27,10 @@
 	},
 	"activationEvents": [
 		"onCommand:extension.GPgitAdd",
-    "onCommand:extension.GPgitAddAll",
-    "onCommand:extension.GPgitAddAndCommit",
-    "onCommand:extension.GPgitAddAllAndCommit",
-    "onCommand:extension.GPgitAddAndCommitAndPush",
+		"onCommand:extension.GPgitAddAll",
+		"onCommand:extension.GPgitAddAndCommit",
+		"onCommand:extension.GPgitAddAllAndCommit",
+		"onCommand:extension.GPgitAddAndCommitAndPush",
 		"onCommand:extension.GPgitAddAllAndCommitAndPush"
 	],
 	"main": "./extension.js",
@@ -38,28 +38,28 @@
 		"commands": [
 			{
 				"command": "extension.GPgitAdd",
-				"title": "Git+ Add"
+				"title": "ga"
 			},
 			{
 				"command": "extension.GPgitAddAll",
-				"title": "Git+ Add All"
+				"title": "gaa"
 			},
-      {
-        "command": "extension.GPgitAddAndCommit",
-        "title": "Git+ Add And Commit"
-      },
-      {
-        "command": "extension.GPgitAddAllAndCommit",
-        "title": "Git+ Add All And Commit"
-      },
-      {
-        "command": "extension.GPgitAddAndCommitAndPush",
-        "title": "Git+ Add And Commit And Push"
-      },
-      {
-        "command": "extension.GPgitAddAllAndCommitAndPush",
-        "title": "Git+ Add All And Commit And Push"
-      }
+			{
+				"command": "extension.GPgitAddAndCommit",
+				"title": "gac"
+			},
+			{
+				"command": "extension.GPgitAddAllAndCommit",
+				"title": "gaac"
+			},
+			{
+				"command": "extension.GPgitAddAndCommitAndPush",
+				"title": "gacp"
+			},
+			{
+				"command": "extension.GPgitAddAllAndCommitAndPush",
+				"title": "gaacp"
+			}
 		]
 	},
 	"devDependencies": {
@@ -69,7 +69,7 @@
 		"@types/vscode": "^1.2.0",
 		"eslint": "^5.13.0",
 		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
+		"mocha": "^10.2.0",
 		"typescript": "^3.3.1",
 		"vscode-test": "^1.2.0"
 	}
