@@ -4,7 +4,7 @@
 	"icon": "img/logo.png",
 	"displayName": "Git Plus",
 	"description": "Git Plus implementation for VSCode",
-	"version": "1.0.0",
+	"version": "2.0.2",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -37,28 +37,28 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.GPgitAdd",
-				"title": "ga"
-			},
-			{
-				"command": "extension.GPgitAddAll",
-				"title": "gaa"
-			},
-			{
-				"command": "extension.GPgitAddAndCommit",
-				"title": "gac"
-			},
-			{
-				"command": "extension.GPgitAddAllAndCommit",
-				"title": "gaac"
+				"command": "extension.GPgitAddAllAndCommitAndPush",
+				"title": "git add all commit & push"
 			},
 			{
 				"command": "extension.GPgitAddAndCommitAndPush",
-				"title": "gacp"
+				"title": "git add commit & push"
 			},
 			{
-				"command": "extension.GPgitAddAllAndCommitAndPush",
-				"title": "gaacp"
+				"command": "extension.GPgitAddAllAndCommit",
+				"title": "git add all & commit"
+			},
+			{
+				"command": "extension.GPgitAddAndCommit",
+				"title": "git add & commit"
+			},
+			{
+				"command": "extension.GPgitAddAll",
+				"title": "git add all"
+			},
+			{
+				"command": "extension.GPgitAdd",
+				"title": "git add"
 			}
 		]
 	},
