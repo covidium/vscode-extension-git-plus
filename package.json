@@ -4,7 +4,7 @@
 	"icon": "img/logo.png",
 	"displayName": "Git Plus",
 	"description": "Git Plus implementation for VSCode",
-	"version": "2.0.4",
+	"version": "2.0.5",
 	"engines": {
 		"vscode": "^1.60.0"
 	},

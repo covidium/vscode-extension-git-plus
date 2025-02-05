@@ -37,10 +37,8 @@ function activate(context) {
         }
         let repo = git.repositories[0];
         let ticket = getTicketPrefix();
-        // Only set the prefix if there isn't already a message.
-        if (!repo.inputBox.value.startsWith(ticket)) {
-            repo.inputBox.value = ticket + repo.inputBox.value;
-        }
+        repo.inputBox.value = ticket + repo.inputBox.value;
+
     }
 
     // Example command: stage changes, then commit with the prefixed message.
