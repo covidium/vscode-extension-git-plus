@@ -7,22 +7,16 @@ function activate(context) {
     const gitExtension = vscode.extensions.getExtension('vscode.git');
     const git = gitExtension && gitExtension.exports && gitExtension.exports.getAPI(1);
 
-    /**
-     * Extracts the ticket from the branch name.
-     * For example, if the branch is "feat/INFRA-123" it returns "[INFRA-123] ".
-     */
     function getTicketPrefix() {
         if (!git || git.repositories.length === 0) {
             return '';
         }
-        // Here we assume the first repository in the list.
         let repo = git.repositories[0];
         if (!repo.state.HEAD || !repo.state.HEAD.name) {
             return '';
         }
         let branchName = repo.state.HEAD.name;
-        // This regex looks for a slash followed by a pattern like INFRA-123 or BUG-21.
-        // Adjust the regex if your branch names differ.
+
         let match = branchName.match(/\/([^\/]+-[0-9]+)/);
         if (match && match[1]) {
             return `[${match[1]}] `;
